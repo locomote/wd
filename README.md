@@ -1,6 +1,6 @@
-# WD.js 
+# WD.js
 
-[![NPM version](http://img.shields.io/npm/v/wd.svg)](https://npmjs.org/package/wd) 
+[![NPM version](http://img.shields.io/npm/v/wd.svg)](https://npmjs.org/package/wd)
 [![Downloads](http://img.shields.io/npm/dm/wd.svg)](https://npmjs.org/package/wd)
 [![Dependency Status](https://david-dm.org/admc/wd.svg)](https://david-dm.org/admc/wd)
 [![devDependency Status](https://david-dm.org/admc/wd/dev-status.svg)](https://david-dm.org/admc/wd#info=devDependencies)
@@ -25,7 +25,7 @@ This library is designed to be a maleable implementation of the webdriver protoc
 npm install wd
 ```
 
-Note: WD.js does not start the selenium server. You may use the  [selenium-standalone](https://www.npmjs.com/package/selenium-standalone) package 
+Note: WD.js does not start the selenium server. You may use the  [selenium-standalone](https://www.npmjs.com/package/selenium-standalone) package
 to install and start a selenium server.
 
 ## Authors
@@ -599,6 +599,12 @@ npm publish
 ## Test Coverage
 
 [test coverage](http://admc.io/wd/istanbul/coverage/lcov-report/lib/index.html)
+
+## Debugging requests
+Use environment variable LOG_FILE:
+```
+WD_LOG_FILE=/tmp/selenium mocha path/to/test/file_spec.js
+```
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/admc/wd/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
